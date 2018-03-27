@@ -87,7 +87,7 @@ if [ $FTYPE != '1' ];then
     echo -e "\033[31mfile system check failed,please check!\033[0m"
     exit 0
 else
-    echo -e "\033[32mfile system d_type check ok!\033[0m"
+    echo -e "\033[32mfile system d_type check ok!\033[0m" 
 fi
 
 while true
