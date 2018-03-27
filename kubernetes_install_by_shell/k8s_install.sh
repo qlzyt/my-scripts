@@ -74,11 +74,11 @@ ETCD2=`echo $ETCD_IPS |tr -s "," " "|awk -F" " '{print $2}'`
 ETCD3=`echo $ETCD_IPS |tr -s "," " "|awk -F" " '{print $3}'`
 ETCD_NODES="etcd-host0=https://$ETCD1:2380,etcd-host1=https://$ETCD2:2380,etcd-host2=https://$ETCD3:2380"
 ETCD_ENDPOINTS="https://$ETCD1:2379,https://$ETCD2:2379,https://$ETCD3:2379"
-
+ 
 ###########################################################################################
 #####################################以下为脚本部分##########################################
 ###########################################################################################
-#安装前的检查 
+#安装前的检查
 Pre_Check(){
 echo -e "\033[32mPrepare to check environment........\033[0m"
 KERNEL=`uname -a|awk -F" " '{ print $3 }'`
