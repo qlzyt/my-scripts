@@ -80,6 +80,7 @@ ETCD_ENDPOINTS="https://$ETCD1:2379,https://$ETCD2:2379,https://$ETCD3:2379"
 ###########################################################################################
 #安装前的检查
 Pre_Check(){
+echo -e "\033[32mPrepare to check environment........\033[0m"
 KERNEL=`uname -a|awk -F" " '{ print $3 }'`
 FTYPE=`xfs_info /opt/sumscope/ |grep ftype |awk -F"=" '{ print $NF }'`
 if [ $FTYPE != '1' ];then
