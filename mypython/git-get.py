@@ -76,7 +76,7 @@ class git_get(object):
         x.field_names = [ "project_name" ]
         [ x.add_row([k])  for  k, v in  self.project_url_dict.iteritems() ]
         x.align = "l"
-        print(x)
+        print x
         return  self
 
     def ver_url(self, project_name):
