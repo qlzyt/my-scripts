@@ -53,7 +53,7 @@ class git_get(object):
         s = requests.Session()
         r = s.post(post_url, data= user_data, headers= headers)
         if r.status_code == 200:
-            return  s
+            return s
 
     def get_project(self):
         suffix = "/user/qa-release"
@@ -77,7 +77,7 @@ class git_get(object):
         [ x.add_row([k])  for  k, v in  self.project_url_dict.iteritems() ]
         x.align = "l"
         print x
-        return  self
+        return self
 
     def ver_url(self, project_name):
         self.project_name = project_name
