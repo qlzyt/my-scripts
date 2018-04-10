@@ -148,7 +148,8 @@ if __name__ == "__main__":
 
         else:
             info = """usage: %s
-                            prolist (show all project list)
+                            prolist (show all project list) 
+                            
                             brlist {project name} (show specified project branch list)
                             gitget  {project name} {branch version} "[-d] {dirctory}"
                             <git clone special branch from remote. -d is optional>
