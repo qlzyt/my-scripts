@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Author: kevinkai
-# Created by iFantastic on 2018/4/11
+# Created by kevinkai on 2018/4/11
 
 
 #函数在内部调用了函数本身，这个函数就是递归函数
