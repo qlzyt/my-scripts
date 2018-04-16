@@ -18,12 +18,5 @@ def myRecusive(name):
         exit(0)
     return myRecusive(name)
 
-
-
-
-
-
-
-
 if __name__ == '__main__':
     myRecusive("zk")
