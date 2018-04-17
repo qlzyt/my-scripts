@@ -5,14 +5,7 @@
 
 
 #生成器计算下一个元素的值使用next(),一般用for循环来迭代
-
-
-# g=(x*y for x in (1,10) for y in range(5))
-# for i in g:
-#     print(i)
-# print(type(g))
-
-
+#将一个函数的返回值变成一个生成器generator使用yield
 
 def fib(max):
     n, a, b = 0, 0, 1
@@ -39,18 +32,32 @@ def triangles(n):
     return
 
 
+def mygenerator(*args):
+    L=[]
+    for i in args:
+        L.append(i)
+    yield L
+    return
+
 
 if __name__ == '__main__':
-    print(fib(5))
+    # print(fib(5))
+    #
+    # g=fib2(2)
+    # try:
+    #     print(next(g))
+    #     print(next(g))
+    #     print(next(g))
+    # except StopIteration as e:
+    #     print(e.value)
+    #
+    # g=triangles(7)
+    # for i in g:
+    #     print(i)
 
-    g=fib2(2)
-    try:
-        print(next(g))
-        print(next(g))
-        print(next(g))
-    except StopIteration as e:
-        print(e.value)
-
-    g=triangles(7)
-    for i in g:
-        print(i)
+    a=4
+    g=mygenerator(a)
+    # print(g)
+    print(next(g))
+    # for i in g:
+    #     print(i)
